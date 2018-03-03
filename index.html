@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <!-- Mobile first styles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Mircosoft: Edge mode tells Internet Explorer to display content in the highest mode available-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--"myhero" script is for IE or earlier"-->
+    <script>
+      document.createElement("myHero")
+    </script>
+    <title>Do you know your coin</title>
+    <!-- External Reset CSS File -->
+    <link rel="stylesheet" href=".css">
+    <!-- Bootstrap CSS URL-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- External Style.CSS File -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Favicon -->
+    <link rel="icon" href="" type="" sizes="16x16">
+  </head>
+
+  <body background-image="CCbackground.jpg" class="container">
+
+    <section class="row">
+      <header class="row col-sm-12">
+        <h1 style="text-align:center;">Digital Currency Trivia Game</h1>
+        <p id="subHeader" style="text-align:center;">Do you know your crypto?</p>
+      </header>
+      <section class="preTimerStart row col-sm-12">
+        <p id="instructions" style="text-align:center;">Press Start to Play <br> You will have 10 seconds to answer each question. <br> Click on the answer you think correct.<br>Press start and lets see how smart you are!</P>
+        <div id="startButton">
+          <button id="startButton" style="display: block; margin: 0 auto;">Start</button>
+      </section>
+    </section>
+
+    <section id="TimerStarted" class="row question_box" style="text-align:center;">
+      <main id="QuestionsRowOne" class="question row">
+        <p id="showQuestion1"></p>
+        <input type="radio" class="options" id="answer0">
+
+
+        <input type="radio" class="options" id="answer1">
+        <label for="contactChoice">Phone</label>
+
+        <input type="radio" class="options" id="answer3">
+        <label for="contactChoice3">Mail</label>
+
+        <input type="radio" class="options" id="answer4">
+        <label for="contactChoice2">Phone</label>
+        <div id="timeLeft">
+          <p>Time Left: <span id="countdown"></span></p>
+        </div>
+      </main>
+
+      <div class="row justify-content-center">
+        <div class="col-md-10 ">
+          <div class=" answerResults row justify-content-center" id="stats">
+
+            <div class="col">
+              <p>Right Answers: <span class="correctAnswers"></span></p>
+            </div>
+            <div class="col">
+              <p>Wrong Answers: <span class="wrongAnswers"></span></p>
+            </div>
+
+            <div class="col">
+              <p>Percentage: <span class="percentage"></span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <!--
+      <main id="QuestionsRowTwo" class="row">
+        <input type="radio" id="contactChoice1" name="contact" value="email">
+        <label for="contactChoice1">Email</label>
+
+        <input type="radio" id="contactChoice2" name="contact" value="phone">
+        <label for="contactChoice2">Phone</label>
+
+        <input type="radio" id="contactChoice3" name="contact" value="mail">
+        <label for="contactChoice3">Mail</label>
+
+        <input type="radio" id="contactChoice2" name="contact" value="phone">
+        <label for="contactChoice2">Phone</label>
+
+        <input type="radio" id="contactChoice3" name="contact" value="mail">
+        <label for="contactChoice3">Mail</label>
+      </main>
+      <main id="QuestionsRowThree" class="row">
+        <input type="radio" id="contactChoice1" name="contact" value="email">
+        <label for="contactChoice1">Email</label>
+
+        <input type="radio" id="contactChoice2" name="contact" value="phone">
+        <label for="contactChoice2">Phone</label>
+
+        <input type="radio" id="contactChoice3" name="contact" value="mail">
+        <label for="contactChoice3">Mail</label>
+
+        <input type="radio" id="contactChoice2" name="contact" value="phone">
+        <label for="contactChoice2">Phone</label>
+
+        <input type="radio" id="contactChoice3" name="contact" value="mail">
+        <label for="contactChoice3">Mail</label>
+      </main>
+      <main id="QuestionsRowFour" class="row">
+        <input type="radio" id="contactChoice1" name="contact" value="email">
+        <label for="contactChoice1">Email</label>
+
+        <input type="radio" id="contactChoice2" name="contact" value="phone">
+        <label for="contactChoice2">Phone</label>
+
+        <input type="radio" id="contactChoice3" name="contact" value="mail">
+        <label for="contactChoice3">Mail</label>
+
+        <input type="radio" id="contactChoice2" name="contact" value="phone">
+        <label for="contactChoice2">Phone</label>
+
+        <input type="radio" id="contactChoice3" name="contact" value="mail">
+        <label for="contactChoice3">Mail</label>
+      </main>
+      <main id="QuestionsRowFive" class="row">
+        <input type="radio" id="contactChoice1" name="contact" value="email">
+        <label for="contactChoice1">Email</label>
+
+        <input type="radio" id="contactChoice2" name="contact" value="phone">
+        <label for="contactChoice2">Phone</label>
+
+        <input type="radio" id="contactChoice3" name="contact" value="mail">
+        <label for="contactChoice3">Mail</label>
+
+        <input type="radio" id="contactChoice2" name="contact" value="phone">
+        <label for="contactChoice2">Phone</label>
+
+        <input type="radio" id="contactChoice3" name="contact" value="mail">
+        <label for="contactChoice3">Mail</label>
+      </main>
+    </section>
+  -->
+      <div class="row justify-content-center">
+        <div class="col-md-10 answer">
+          <p><span id="correctAnswer"></span></p>
+          <div id="image"></div>
+        </div>
+      </div>
+
+      <div class="row replay justify-content-center">
+        <button id="replay_button btn btn-primary">Play Again</button>
+      </div>
+
+      <footer>
+        <p style="text-align:center;">Copywrite &copy; 2018</p>
+      </footer>
+
+
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <script src="assets/javascript/app.js"></script>
+  </body>
+  </body>
+
+</html>

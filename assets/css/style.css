@@ -1,0 +1,55 @@
+header, section, footer, aside, nav, main, article, figure {
+  display: block;
+}
+
+body {
+  background-image: url('../images/btc1.jpg');
+  color: #ffd700;
+  font-family: 'Pathway-Gothic One', sans-serif;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  color: #ffd700;
+  font-weight: bold;
+  font-size: 40px;
+  font-stretch: expanded;
+}
+
+#subHeader {
+  color: #ffd700;
+  font-weight: bold;
+  font-size: 25px;
+  font-family: cursive;
+  margin-bottom: 25px;
+  font-style: italic;
+}
+
+#instructions {
+  margin-bottom: 15px;
+  color: white;
+  font-size: 15px;
+  padding-bottom: 10px;
+}
+
+#startButton {
+  color: black;
+  border-color: gold;
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: grey;
+  text-align: center;
+  padding: 8px;
+}
